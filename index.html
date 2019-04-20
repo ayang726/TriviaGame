@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Trivia Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="col-lg-12 title">Kids Trivia Game</h1>
+        </div>
+        <div class="row header">
+            <div class="col-md-3">
+                <div class="header-item">
+                    <h6>QUESTION #</h6>
+                    <h3 id="question-number">1</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="header-item">
+                    <h6>QUESTION REMAINING</h6>
+                    <h3 id="question-remaining">30</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="header-item">
+                    <h6>SCORE</h6>
+                    <h3 id="score">0/30</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="header-item">
+                    <h6>TIMER</h6>
+                    <h3 id="timer">0</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row question">
+            <div class="col-lg-12">
+                <h2 id="question">I am a question</h2>
+            </div>
+        </div>
+        <div class="row multiple-choice">
+            <div class="col-lg-12 choice-grid">
+                <button class="btn btn-lg btn-light answer" id="answer1" value="0">First Answer</button>
+                <button class="btn btn-lg btn-light answer" id="answer2" value="1">Second Answer</button>
+                <button class="btn btn-lg btn-light answer" id="answer3" value="2">Third Answer</button>
+                <button class="btn btn-lg btn-light answer" id="answer4" value="3">Fourth Answer</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="dialogue" tabindex="-1" role="dialog" aria-labelledby="dialogueLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="dialogueTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="dialogueBody">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="modal-button"
+                            data-dismiss="modal">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/game.js"></script>
+
+</body>
+
+</html>
